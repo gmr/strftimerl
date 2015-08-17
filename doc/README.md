@@ -1,3 +1,0 @@
-
-
-# The strftimerl application #
