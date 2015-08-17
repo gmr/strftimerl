@@ -2,8 +2,7 @@ strftimerl
 ==========
 Erlang implementation of strftime.
 
-.. image:: https://img.shields.io/travis/gmr/strftimerl.svg
-    :target: https://travis-ci.org/gmr/strftimerl
+[![Build Status](https://travis-ci.org/gmr/strftimerl.svg?branch=master)](https://travis-ci.org/gmr/strftimerl)
 
 ## Function Index ##
 
@@ -23,7 +22,8 @@ format(Value, Datetime) -&gt; string()
 
 <ul class="definitions"><li><code>Value = string()</code></li><li><code>Datetime = <a href="#type-datetime">datetime()</a></code></li></ul>
 
-Format a date and time. Supported conversion specifictions include:
+Format a date and time. Supported conversion specifications include:
+
 - `%C` The century number (year/100) as a 2-digit integer.
 - `%d` The day of the month as a decimal number (range 01 to 31).
 - `%D` Equivalent to `%m/%d/%y`.
