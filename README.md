@@ -4,23 +4,17 @@ Erlang implementation of strftime.
 
 [![Build Status](https://travis-ci.org/gmr/strftimerl.svg?branch=master)](https://travis-ci.org/gmr/strftimerl)
 
-## Function Index ##
+Function Index
+--------------
 
-<table width="100%" border="1" cellspacing="0" cellpadding="2" summary="function index"><tr><td valign="top"><a href="#format-2">format/2</a></td><td>Format a date and time.</td></tr></table>
-
-<a name="functions"></a>
-
-## Function Details ##
-
-<a name="format-2"></a>
+- <a href="#format-2">format/2</a>: Format a date and time.
 
 ### format/2 ###
-
 <pre><code>
 format(Value, Datetime) -&gt; string()
 </code></pre>
 
-<ul class="definitions"><li><code>Value = string()</code></li><li><code>Datetime = <a href="#type-datetime">datetime()</a></code></li></ul>
+<ul class="definitions"><li><code>Value = string()</code></li><li><code>Datetime = datetime()</a></code></li></ul>
 
 Format a date and time. Supported conversion specifications include:
 
@@ -53,3 +47,20 @@ Format a date and time. Supported conversion specifications include:
 - `%y` The year as a decimal number without a century (range 00 to 99).
 - `%Y` The year as a decimal number including the century.
 
+#### Examples ####
+
+```erlang
+    Erlang/OTP 17 [erts-6.4] [source] [64-bit] [smp:8:8] [async-threads:10] [hipe] [kernel-poll:false] [dtrace]
+    
+    Eshell V6.4  (abort with ^G)
+    1> strftimerl:format("%Y-%m-%d %H:%M:%S", calendar:universal_time()).
+    "2015-08-17 22:02:26"
+    2> strftimerl:format("%s", calendar:universal_time()).
+    "1439848958"
+    3> strftimerl:format("%D", calendar:universal_time()).
+    "08/17/2015"
+    4> io:format("~s~n", [strftimerl:format("%Y-%m-%d%n%I:%M %P", calendar:universal_time())]).
+    2015-08-17
+    10:04 pm
+    ok    
+'''
