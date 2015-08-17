@@ -1,6 +1,6 @@
 strftimerl
 ==========
-Erlang implementation of strftime. This library implements most of the strftime library. It currently does not
+Erlang implementation of strftime. This library implements most of the strftime format specifiers. It currently does not
 support the any of the locale related text specifiers (day of week name, month name, etc), ``%U``, ``%W``, 
 timezone specifiers, or the locale preferred date specifiers (``%x``, ``%X``).
 
@@ -19,7 +19,6 @@ Format a date and time. Supported conversion specifications include:
 -----------|---------
  ``%C``    | The century number (year/100) as a 2-digit integer.
  ``%d``    | The day of the month as a decimal number (range 01 to 31).
- ``%D``    | Equivalent to ``%m/%d/%y``.
  ``%D``    | Equivalent to ``%m/%d/%y``.
  ``%F``    | Equivalent to ``%Y-%m-%d``.
  ``%G``    | The ISO 8601 week-based year with century as a decimal number.
