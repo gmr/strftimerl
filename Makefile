@@ -7,9 +7,6 @@ build-plt:
 	@dialyzer --build_plt --output_plt ~/.$(PROJECT).plt \
 		--apps kernel stdlib erts
 
-check-plt:
-	@dialyzer --check_plt --plt ~/.$(PROJECT).plt
-
 clean:
 	@( $(REBAR) clean )
 

@@ -1,9 +1,10 @@
 sudo: false
 language: erlang
 otp_release:
-  - R14A
   - R15B
   - R16B03
   - 17.5
   - 18.0
+before_script:
+  - make build-plt
 script: make test && make dialyze
