@@ -1,12 +1,8 @@
 sudo: false
 language: erlang
 otp_release:
-  - 17.1
-  - 17.3
-  - 17.4
+  - R14A
+  - R15B
+  - R16B03
   - 17.5
-  - 18.0
 script: make test && make dialyze
-cache:
-  directories:
-    - "${HOME}/otp"
