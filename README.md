@@ -1,6 +1,8 @@
 strftimerl
 ==========
-Erlang implementation of strftime.
+Erlang implementation of strftime. This library implements most of the strftime library. It currently does not
+support the any of the locale related text specifiers (day of week name, month name, etc), ``%U``, ``%W``, 
+timezone specifiers, or the locale preferred date specifiers (``%x``, ``%X``).
 
 [![Build Status](https://travis-ci.org/gmr/strftimerl.svg?branch=master)](https://travis-ci.org/gmr/strftimerl)
 
