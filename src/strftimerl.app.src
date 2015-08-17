@@ -1,0 +1,11 @@
+{application, strftimerl, [
+  {description, "strftime formatting in erlang"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {applications, [
+    kernel,
+    stdlib
+  ]},
+  {mod, {strftimerl, []}},
+  {env, []}
+]}.

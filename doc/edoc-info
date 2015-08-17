@@ -1,0 +1,4 @@
+%% encoding: UTF-8
+{application,strftimerl}.
+{packages,[]}.
+{modules,[strftimerl]}.

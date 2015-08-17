@@ -1,0 +1,13 @@
+sudo: false
+language: erlang
+otp_release:
+  - 16A
+  - 16B
+  - 17.1
+  - 17.3
+  - 17.4
+  - 17.5
+  - 18.0
+cache:
+  directories:
+    - "${HOME}/otp"
