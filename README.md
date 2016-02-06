@@ -4,7 +4,7 @@ Erlang implementation of strftime. This library implements most of the strftime 
 support the any of the locale related text specifiers (day of week name, month name, etc), ``%U``, ``%W``, 
 timezone specifiers, or the locale preferred date specifiers (``%x``, ``%X``).
 
-[![Version](https://img.shields.io/hexpm/v/strftime.svg)](https://hex.pm/packages/strftime) [![Downloads](https://img.shields.io/hexpm/dt/strftime.svg)](https://hex.pm/packages/strftime) [![Build Status](https://travis-ci.org/gmr/strftime.svg?branch=master)](https://travis-ci.org/gmr/strftime) [![codecov.io](https://codecov.io/github/gmr/strftime/coverage.svg?branch=master)](https://codecov.io/github/gmr/strftime?branch=master)
+[![Version](https://img.shields.io/hexpm/v/strftime.svg)](https://hex.pm/packages/strftimerl) [![Downloads](https://img.shields.io/hexpm/dt/strftimerl.svg)](https://hex.pm/packages/strftimerl) [![Build Status](https://travis-ci.org/gmr/strftimerl.svg?branch=master)](https://travis-ci.org/gmr/strftimerl) [![codecov.io](https://codecov.io/github/gmr/strftimerl/coverage.svg?branch=master)](https://codecov.io/github/gmr/strftimerl?branch=master)
 
 ### format/2 ###
 ```erlang
