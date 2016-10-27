@@ -9,6 +9,5 @@
     kernel,
     stdlib
   ]},
-  {mod, {strftimerl, []}},
   {env, []}
 ]}.
