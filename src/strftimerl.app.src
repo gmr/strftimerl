@@ -9,5 +9,6 @@
     kernel,
     stdlib
   ]},
-  {env, []}
+  {env, []},
+  {modules, []}
 ]}.
